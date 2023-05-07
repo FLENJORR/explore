@@ -6,7 +6,7 @@ body {
 #page-logo a {
     padding: 10px;
     font-family: "oleo script", "san-serif";
-    color: rgb(245, 243, 160);
+    color: rgb(255, 251, 0);
     font-size: 50px;
     text-decoration: none;
     text-transform: uppercase;
@@ -24,6 +24,11 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 15px 60px;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    box-sizing: border-box;
 }
 
 header ul {
@@ -32,4 +37,19 @@ header ul {
 
 header li{
     margin-left: 20px;
+}
+
+.link {
+    color: rgb(255, 251, 0);
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 12px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+}
+
+.link:hover {
+    color: rgb(77, 77, 77);
+    background-color: rgb(255, 251, 0);
 }
