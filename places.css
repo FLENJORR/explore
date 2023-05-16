@@ -8,9 +8,37 @@ header {
     margin: 20px auto;
 }
 
+.places-logo{
+    color: rgb(183, 230, 235);
+    padding: 10px;
+    font-family: "oleo script", "san-serif";
+    font-size: 50px;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 2px rgb(0, 0, 0, 0.6);
+}
+
+.link-logo {
+    color: rgb(183, 230, 235);
+    font-weight: bold;
+    text-decoration: none;
+    font-size: large;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.link-logo:hover {
+    background-color:  rgb(183, 230, 235);
+    color: rgb(59, 59, 59);
+}
+
 main {
     margin-top: 150px;
 }
+/* 
+main li p {
+    margin-bottom: 5px;
+} */
 
 main li img {
     width: 300px;
@@ -18,9 +46,16 @@ main li img {
     object-fit: cover;
 }
 
+li:nth-of-type(3) {
+    grid-column: 1 / span 2;
+}
+
 main ul {
-    width: 800px;
-    margin: 0 auto;
+    width: 1200px;
+    margin: 0 auto 48px auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px 20px;
 }
 
 main li {
@@ -29,6 +64,7 @@ main li {
     box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2);
     border-radius: 10px;
     overflow: hidden;
+    /* width: 500px; */
 }
 
 .item-content {
@@ -36,6 +72,10 @@ main li {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+}
+
+.item-content h2 {
+    margin: 0;
 }
 
 .actions {
